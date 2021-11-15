@@ -1,5 +1,5 @@
-@import "./about.scss";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./about";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 $default-color: #369fa4;
 
@@ -14,11 +14,11 @@ $default-color: #369fa4;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -60,11 +60,63 @@ a {
       .nav-list {
         list-style: none;
         @include flexContent(row);
+        margin-bottom: 0;
       }
       a {
         color: #000;
         padding: 5px 10px;
+        font-size: 16px;
       }
     }
+  }
+}
+
+#footer {
+  .footer-contact {
+    background-color: #edfeff;
+    border-top: 1px solid #aafbff;
+    padding: 70px 48px 30px;
+    .col-block{
+      @include flexContent(column);
+      padding: 0px 25px;
+      img{
+        height: 120px;
+      }
+      h4{
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+      p{
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .footer-content{
+    background-color: #2A3B3C;
+    color: #fff;
+    padding: 40px 48px 20px;
+    .footer-links{
+      >div{
+        padding-left: 3%;
+        padding-right: 0px;
+        position: relative;
+      }
+    }
+    .service-list{
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+      a{
+        color: #fff;
+
+      }
+    }
+  }
+
+  .btn-light {
+    background-color: #369fa4;
+    color: #fff;
+    width: 140px;
   }
 }
