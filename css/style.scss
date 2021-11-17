@@ -1,5 +1,5 @@
 @import "./about";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 $default-color: #369fa4;
 
@@ -18,7 +18,7 @@ $default-color: #369fa4;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
@@ -76,40 +76,72 @@ a {
     background-color: #edfeff;
     border-top: 1px solid #aafbff;
     padding: 70px 48px 30px;
-    .col-block{
+    .col-block {
       @include flexContent(column);
       padding: 0px 25px;
-      img{
+      img {
         height: 120px;
       }
-      h4{
+      h4 {
         margin-top: 40px;
         margin-bottom: 15px;
       }
-      p{
+      p {
         text-align: center;
         margin-bottom: 15px;
       }
     }
   }
-  .footer-content{
-    background-color: #2A3B3C;
+  .footer-content {
+    background-color: #2a3b3c;
     color: #fff;
     padding: 40px 48px 20px;
-    .footer-links{
-      >div{
+    font-weight: 300;
+    font-size: 12px;
+    .footer-links {
+      > div {
         padding-left: 3%;
         padding-right: 0px;
         position: relative;
       }
     }
-    .service-list{
+    .service-list {
       list-style: none;
       padding-left: 0;
       margin-top: 10px;
-      a{
+      a {
         color: #fff;
+      }
+    }
+  }
 
+  .footer-foot {
+    @include flexContent(row);
+    padding-top: 10px;
+    position: relative;
+    font-size: 10px;
+    font-weight: 200;
+    justify-content: space-between;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      background-color: #8F8F8F;
+    }
+    .foot-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        padding-left: 20px;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
       }
     }
   }
