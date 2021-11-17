@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
@@ -161,9 +161,11 @@ a {
 }
 
 #footer .footer-content {
-  background-color: #2A3B3C;
+  background-color: #2a3b3c;
   color: #fff;
   padding: 40px 48px 20px;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 #footer .footer-content .footer-links > div {
@@ -179,6 +181,59 @@ a {
 }
 
 #footer .footer-content .service-list a {
+  color: #fff;
+}
+
+#footer .footer-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 10px;
+  position: relative;
+  font-size: 10px;
+  font-weight: 200;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .footer-foot::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  background-color: #8F8F8F;
+}
+
+#footer .footer-foot .foot-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer-foot .foot-links li {
+  padding-left: 20px;
+}
+
+#footer .footer-foot .foot-links li a {
+  text-decoration: none;
   color: #fff;
 }
 
