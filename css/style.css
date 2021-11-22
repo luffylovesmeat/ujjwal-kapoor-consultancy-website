@@ -610,6 +610,10 @@ h2 {
   min-width: 40px;
 }
 
+#footer .footer-content .contact-details .address p {
+  margin-bottom: 0;
+}
+
 #footer .footer-content .copyright {
   text-align: center;
   margin-top: 40px;
