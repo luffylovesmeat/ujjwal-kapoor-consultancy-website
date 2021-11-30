@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   color: $default-color;
   transition: all 0.3s ease-in-out;
-  &:hover{
+  &:hover {
     color: #5eb2b7;
   }
 }
@@ -59,7 +59,6 @@ h2 {
   background: $default-color;
   position: absolute;
   width: 100%;
-  height: 100%;
   height: 100%;
   // position: fixed;
   z-index: 2;
@@ -122,7 +121,7 @@ h2 {
       }
       a {
         color: #000;
-        padding: 5px 12px;
+        padding: 5px 0px 5px 24px;
         font-size: 18px;
         font-weight: 600;
       }
@@ -149,7 +148,7 @@ h2 {
   }
   .welcome-content {
     width: 100%;
-    height: 400px;
+    height: 35rem;
     position: relative;
     padding: $initial-padding;
     z-index: 3;
@@ -166,7 +165,7 @@ h2 {
 .about-uka-home {
   .sub-head {
     height: fit-content;
-    padding: 40px $initial-padding;
+    padding: 60px $initial-padding 50px;
     @include flexContent(column);
     justify-content: center;
     align-items: baseline;
@@ -181,7 +180,7 @@ h2 {
   z-index: 1;
   color: #fff;
   height: fit-content;
-  padding: $initial-padding;
+  padding: 90px $initial-padding;
   .content-container {
     position: relative;
     z-index: 3;
@@ -196,7 +195,7 @@ h2 {
       background-color: #fff;
       border-radius: 6px;
 
-      margin-top: 20px;
+      margin-top: 50px;
       .service-item {
         padding: 5px 10px 5px 0px;
         @include flexContent(row);
@@ -225,12 +224,12 @@ h2 {
 
 .home-accounting {
   position: relative;
-  padding: 70px $initial-padding 50px;
+  padding: 100px $initial-padding 50px;
   &::before {
     content: "";
     width: 80%;
     position: absolute;
-    top: 220px;
+    top: 240px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -249,7 +248,7 @@ h2 {
     }
     img {
       margin-left: 60px;
-      max-width: 300px;
+      max-width: 425px;
     }
   }
 }
@@ -257,7 +256,7 @@ h2 {
 .home-why-us {
   position: relative;
   z-index: 1;
-  padding: 50px $initial-padding;
+  padding: 100px $initial-padding;
   .why-us-content {
     position: relative;
     z-index: 3;
@@ -269,24 +268,27 @@ h2 {
     }
     .content-box {
       text-align: right;
+      h1 {
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
 .home-testimonials {
-  padding: 60px $initial-padding;
+  padding: 120px $initial-padding;
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
   }
   .heading-box {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .carousel-item {
     padding: 40px 0px 60px;
   }
   .carousel-indicators {
-    bottom: -11%;
+    bottom: -20%;
     button {
       height: 20px;
       width: 20px;
@@ -309,11 +311,131 @@ h2 {
 
 //* About Styles
 
+.sub-header {
+  .title {
+    position: relative;
+    height: 12rem;
+    background: $default-color;
+    color: #fff;
+    padding: 0px $initial-padding;
+    @include flexContent(row);
+    justify-content: start;
+    h1 {
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+.about-page-content{
+  background-color: #edfeff;
+  .the-firm{
+    background-color: #fff;
+    box-shadow: 0px 1px 5px -2px #666666;
+  }
+  .about-us{
+
+  }
+}
+
+//* Contact Styles
+.contact2 {
+  color: #8d97ad;
+  font-weight: 300;
+  padding-bottom: 60px;
+  margin-bottom: 170px;
+  background-position: center top;
+
+  .container{
+    position: relative;
+  }
+}
+
+.contact2 h1,
+.contact2 h2,
+.contact2 h3,
+.contact2 h4,
+.contact2 h5,
+.contact2 h6 {
+  color: #3e4555;
+}
+
+.contact2 .font-weight-medium {
+  font-weight: 500;
+}
+
+.contact2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.contact2 .bg-image {
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+
+.contact2 .card.card-shadow {
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.4);
+}
+
+.contact2 .detail-box .round-social {
+  margin-top: 100px;
+}
+
+.contact2 .round-social a {
+  background: transparent;
+  margin: 0 7px;
+  padding: 11px 12px;
+}
+
+.contact2 .contact-container .links a {
+  color: #8d97ad;
+}
+
+
+.contact2 .contact-container {
+  @include flexContent(row);
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  top: -250px;
+  .card{
+    width: 70rem;
+
+    padding-top: 2.2rem;
+    h1, h4{
+      text-align: center;
+    }
+  }
+}
+
+
+.contact-img-box{
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  .contact-img{
+    width: 100%;
+  }
+}
+
+.contact-box{
+  button[type=submit]{
+    background-color: $default-color;
+    &:hover{
+      background-color: #5eb2b7;
+    }
+  }
+}
+
+//* footer styles
 #footer {
   .footer-contact {
     background-color: #edfeff;
     border-top: 1px solid #aafbff;
-    padding: 70px $initial-padding 30px;
+    padding: 80px $initial-padding;
     .col-block {
       @include flexContent(column);
       padding: 0px 25px;
@@ -328,11 +450,18 @@ h2 {
         text-align: center;
         margin-bottom: 15px;
       }
+      .btn {
+        margin-top: 20px;
+        width: 10rem;
+      }
     }
   }
   .footer-content {
-    padding: 50px $initial-padding;
+    padding: 110px $initial-padding 60px;
     background-color: #2a3b3c;
+    .col-xl-5{
+      padding-right: 50px;
+    }
     h4 {
       margin-bottom: 30px;
       position: relative;
@@ -389,24 +518,24 @@ h2 {
         }
       }
     }
-    .contact-details{
-      li{
+    .contact-details {
+      li {
         display: flex;
         margin-bottom: 5px;
       }
-      .icon{
+      .icon {
         display: block;
         min-width: 40px;
       }
-      .address{
-        p{
+      .address {
+        p {
           margin-bottom: 0;
         }
       }
     }
-    .copyright{
+    .copyright {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 60px;
     }
   }
   .row {
