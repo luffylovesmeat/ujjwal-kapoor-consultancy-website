@@ -119,11 +119,30 @@ h2 {
         @include flexContent(row);
         margin-bottom: 0;
       }
-      a {
-        color: #000;
+      .nav-item {
         padding: 5px 0px 5px 24px;
+      }
+      a {
+        position: relative;
+        color: #333;
+        // color: #000;
         font-size: 18px;
         font-weight: 600;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          left: 0;
+          bottom: 0;
+          transform: translateY(10px);
+          transition: all 0.3s ease;
+        }
+        &:hover::after{
+          background-color: $default-color;
+          transform: translateY(0px);
+        }
       }
     }
   }
@@ -150,14 +169,11 @@ h2 {
     width: 100%;
     height: 35rem;
     position: relative;
-    padding: $initial-padding;
+    padding: 5rem $initial-padding 3.5rem;
     z-index: 3;
-    h1 {
-      font-weight: 800;
-    }
     p {
       max-width: 500px;
-      margin-top: 15px;
+      margin-top: 1.5rem;
     }
   }
 }
@@ -165,7 +181,7 @@ h2 {
 .about-uka-home {
   .sub-head {
     height: fit-content;
-    padding: 60px $initial-padding 50px;
+    padding: 5rem $initial-padding 3.5rem;
     @include flexContent(column);
     justify-content: center;
     align-items: baseline;
@@ -180,7 +196,7 @@ h2 {
   z-index: 1;
   color: #fff;
   height: fit-content;
-  padding: 90px $initial-padding;
+  padding: 5rem $initial-padding;
   .content-container {
     position: relative;
     z-index: 3;
@@ -191,7 +207,7 @@ h2 {
 
     .uka-services {
       color: #000;
-      padding: 30px 30px;
+      padding: 2rem;
       background-color: #fff;
       border-radius: 6px;
 
@@ -257,6 +273,18 @@ h2 {
   position: relative;
   z-index: 1;
   padding: 100px $initial-padding;
+  .home-contact-btn {
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #222;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      letter-spacing: 0.1rem;
+    }
+  }
   .why-us-content {
     position: relative;
     z-index: 3;
@@ -269,14 +297,14 @@ h2 {
     .content-box {
       text-align: right;
       h1 {
-        margin-bottom: 30px;
+        margin-bottom: 2rem;
       }
     }
   }
 }
 
 .home-testimonials {
-  padding: 120px $initial-padding;
+  padding: 7rem $initial-padding;
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
@@ -302,15 +330,29 @@ h2 {
     }
   }
   .testimonial-content {
+    img{
+      margin-right: 2.5rem;
+    }
     > div {
       @include flexContent(row);
       justify-content: baseline;
+      
     }
   }
 }
 
 //* About Styles
+.color-bg {
+  background-color: #edfeff;
+}
 
+.img-margin-left {
+  margin-left: 4rem;
+}
+
+.img-margin-right {
+  margin-right: 4rem;
+}
 .sub-header {
   .title {
     position: relative;
@@ -326,14 +368,108 @@ h2 {
     }
   }
 }
-.about-page-content{
-  background-color: #edfeff;
-  .the-firm{
+.about-page-content {
+  .the-firm {
+    display: flex;
+    text-align: justify;
     background-color: #fff;
+    padding: 5rem $initial-padding 3.5rem;
     box-shadow: 0px 1px 5px -2px #666666;
+    img {
+      margin-left: 4rem;
+    }
+    h2 {
+      margin-bottom: 2rem;
+    }
   }
-  .about-us{
-
+  .about-us {
+    padding: 5rem $initial-padding 2rem;
+    text-align: justify;
+    .about-us-content {
+      margin-bottom: 3rem;
+      display: flex;
+      .about-img {
+        max-width: 20rem;
+      }
+    }
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .box-head-2 {
+      margin-top: 3rem;
+    }
+  }
+}
+.our-teams {
+  position: relative;
+  .teams-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 5rem $initial-padding 1rem;
+    .team {
+      text-align: center;
+      text-shadow: 1px 0px 10px #555;
+    }
+    .team-box {
+      border-radius: 6px;
+      margin-bottom: 4rem;
+      background-color: #fff;
+      color: #000;
+      padding: 4rem;
+      margin: 5rem 0rem;
+      display: flex;
+      .team-details {
+        margin-left: 4rem;
+        text-align: justify;
+        h3 {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+    .team-imgs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .social-icons {
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li {
+          margin: 0 0.5rem;
+          a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $default-color;
+            @include flexContent(row);
+            i {
+              color: #fff;
+            }
+            &:hover {
+              background-color: #5eb2b7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.more-info {
+  padding: 5rem $initial-padding 3.5rem;
+  text-align: justify;
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  .more-info-content {
+    display: flex;
+    img {
+      max-width: 30rem;
+      margin-left: 4rem;
+    }
   }
 }
 
@@ -345,7 +481,7 @@ h2 {
   margin-bottom: 170px;
   background-position: center top;
 
-  .container{
+  .container {
     position: relative;
   }
 }
@@ -392,7 +528,6 @@ h2 {
   color: #8d97ad;
 }
 
-
 .contact2 .contact-container {
   @include flexContent(row);
   position: absolute;
@@ -402,29 +537,29 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   top: -250px;
-  .card{
+  .card {
     width: 70rem;
 
     padding-top: 2.2rem;
-    h1, h4{
+    h1,
+    h4 {
       text-align: center;
     }
   }
 }
 
-
-.contact-img-box{
+.contact-img-box {
   padding-right: 1.5rem;
   padding-top: 1rem;
-  .contact-img{
+  .contact-img {
     width: 100%;
   }
 }
 
-.contact-box{
-  button[type=submit]{
+.contact-box {
+  button[type="submit"] {
     background-color: $default-color;
-    &:hover{
+    &:hover {
       background-color: #5eb2b7;
     }
   }
@@ -435,7 +570,7 @@ h2 {
   .footer-contact {
     background-color: #edfeff;
     border-top: 1px solid #aafbff;
-    padding: 80px $initial-padding;
+    padding: 5rem $initial-padding;
     .col-block {
       @include flexContent(column);
       padding: 0px 25px;
@@ -459,7 +594,7 @@ h2 {
   .footer-content {
     padding: 110px $initial-padding 60px;
     background-color: #2a3b3c;
-    .col-xl-5{
+    .col-xl-5 {
       padding-right: 50px;
     }
     h4 {
