@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 $default-color: #369fa4;
-$initial-padding: 80px;
+
+:root{
+  --sidePadding: 80px;
+}
+
+
+@mixin initPadding($pad) {
+  padding-left: $pad;
+  padding-right: $pad;
+}
 
 @mixin flexContent($direction) {
   display: flex;
@@ -85,7 +94,11 @@ h2 {
     justify-content: space-between;
     height: 55px;
     background: $default-color;
-    padding: 0px $initial-padding;
+    padding: 0px;
+    @include initPadding(var(--sidePadding));
+    .head-btn-number{
+      display: none;
+    }
     .head-btn {
       border: 1px solid #fff;
       border-radius: 3px;
@@ -101,7 +114,8 @@ h2 {
     }
   }
   .navbar {
-    padding: 0px $initial-padding;
+    padding: 0px;
+    @include initPadding(var(--sidePadding));
     @include flexContent(row);
     justify-content: space-between;
     height: 65px;
@@ -117,10 +131,12 @@ h2 {
       .nav-list {
         list-style: none;
         @include flexContent(row);
+        justify-content: end;
         margin-bottom: 0;
       }
       .nav-item {
         padding: 5px 0px 5px 24px;
+        width: fit-content;
       }
       a {
         position: relative;
@@ -148,6 +164,11 @@ h2 {
   }
 }
 
+.offcanvas{
+  max-width: 50vw;
+}
+
+
 //* Home Styles
 .home-welcome {
   position: relative;
@@ -169,7 +190,8 @@ h2 {
     width: 100%;
     height: 35rem;
     position: relative;
-    padding: 5rem $initial-padding 3.5rem;
+    padding: 5rem 0 3.5rem;
+    @include initPadding(var(--sidePadding));
     z-index: 3;
     p {
       max-width: 500px;
@@ -181,7 +203,8 @@ h2 {
 .about-uka-home {
   .sub-head {
     height: fit-content;
-    padding: 5rem $initial-padding 3.5rem;
+    padding: 5rem 0 3.5rem;
+    @include initPadding(var(--sidePadding));
     @include flexContent(column);
     justify-content: center;
     align-items: baseline;
@@ -196,7 +219,8 @@ h2 {
   z-index: 1;
   color: #fff;
   height: fit-content;
-  padding: 5rem $initial-padding;
+  padding: 5rem;
+  @include initPadding(var(--sidePadding));
   .content-container {
     position: relative;
     z-index: 3;
@@ -239,19 +263,23 @@ h2 {
 }
 
 .home-accounting {
-  position: relative;
-  padding: 100px $initial-padding 50px;
-  &::before {
-    content: "";
-    width: 80%;
-    position: absolute;
-    top: 240px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: 1px;
-    background-color: #666666;
+  padding: 100px 0 50px;
+  @include initPadding(var(--sidePadding));
+  .heading-box{
+    position: relative;
+    &::before {
+      content: "";
+      width: 80%;
+      position: absolute;
+      bottom: -55px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 1px;
+      background-color: #666666;
+      z-index: 1000;
+    }
   }
 
   .accounting-content {
@@ -265,6 +293,7 @@ h2 {
     img {
       margin-left: 60px;
       max-width: 425px;
+      height: fit-content;
     }
   }
 }
@@ -272,7 +301,8 @@ h2 {
 .home-why-us {
   position: relative;
   z-index: 1;
-  padding: 100px $initial-padding;
+  padding: 100px 0;
+  @include initPadding(var(--sidePadding));
   .home-contact-btn {
     margin-top: 1.5rem;
     padding-left: 2rem;
@@ -304,7 +334,8 @@ h2 {
 }
 
 .home-testimonials {
-  padding: 7rem $initial-padding;
+  padding: 7rem;
+  @include initPadding(var(--sidePadding));
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
@@ -336,7 +367,7 @@ h2 {
     > div {
       @include flexContent(row);
       justify-content: baseline;
-      
+      margin-bottom: 2rem;
     }
   }
 }
@@ -359,7 +390,8 @@ h2 {
     height: 12rem;
     background: $default-color;
     color: #fff;
-    padding: 0px $initial-padding;
+    padding: 0;
+    @include initPadding(var(--sidePadding));
     @include flexContent(row);
     justify-content: start;
     h1 {
@@ -373,7 +405,8 @@ h2 {
     display: flex;
     text-align: justify;
     background-color: #fff;
-    padding: 5rem $initial-padding 3.5rem;
+    padding: 5rem 0 3.5rem;
+    @include initPadding(var(--sidePadding));
     box-shadow: 0px 1px 5px -2px #666666;
     img {
       margin-left: 4rem;
@@ -383,7 +416,8 @@ h2 {
     }
   }
   .about-us {
-    padding: 5rem $initial-padding 2rem;
+    padding: 5rem 0 2rem;
+    @include initPadding(var(--sidePadding));
     text-align: justify;
     .about-us-content {
       margin-bottom: 3rem;
@@ -406,7 +440,8 @@ h2 {
     position: relative;
     z-index: 2;
     color: #fff;
-    padding: 5rem $initial-padding 1rem;
+    padding: 5rem 0 1rem;
+    @include initPadding(var(--sidePadding));
     .team {
       text-align: center;
       text-shadow: 1px 0px 10px #555;
@@ -459,7 +494,8 @@ h2 {
   }
 }
 .more-info {
-  padding: 5rem $initial-padding 3.5rem;
+  padding: 5rem 0 3.5rem;
+  @include initPadding(var(--sidePadding));
   text-align: justify;
   h2 {
     margin-bottom: 1.5rem;
@@ -570,7 +606,8 @@ h2 {
   .footer-contact {
     background-color: #edfeff;
     border-top: 1px solid #aafbff;
-    padding: 5rem $initial-padding;
+    padding: 5rem;
+    @include initPadding(var(--sidePadding));
     .col-block {
       @include flexContent(column);
       padding: 0px 25px;
@@ -592,10 +629,14 @@ h2 {
     }
   }
   .footer-content {
-    padding: 110px $initial-padding 60px;
+    padding: 110px 0 60px;
+    @include initPadding(var(--sidePadding));
     background-color: #2a3b3c;
     .col-xl-5 {
       padding-right: 50px;
+    }
+    >div{
+      padding-bottom: 50px;
     }
     h4 {
       margin-bottom: 30px;
@@ -650,6 +691,9 @@ h2 {
         padding: 4px 0px;
         a {
           color: #ffffff99;
+          &:hover{
+            color: #ffffff33;
+          }
         }
       }
     }
@@ -670,11 +714,166 @@ h2 {
     }
     .copyright {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 3rem;
     }
   }
   .row {
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :root{
+    --sidePadding: 60px
+  }
+  #header{
+    .navbar{
+      .navbar-menu{
+        .nav-item {
+          padding: 5px 0px 5px 16px;
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    .footer-contact{
+      >div{
+        margin-bottom: 4rem;
+      }
+    }
+    .footer-content{
+      .col-xl-5, .col-xl-2,.col-12{
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  .home-testimonials{
+
+    .carousel-indicators{
+      bottom: -10%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root{
+    --sidePadding: 40px
+  }
+  
+ #header{
+   .head-contact{
+     display: flex;
+     flex-direction: row-reverse;
+     .head-menu{
+       .head-btn{
+         display: none;
+        }
+     }
+   }
+   .navbar{
+     .navbar-menu{
+       .nav-list{
+         flex-direction: column;
+         justify-content: start;
+         align-items: center;
+         .nav-item{
+           padding: 0;
+           width: 100%;
+         }
+         a{
+           font-size: 18px;
+           width: 100%;
+           height: 4rem;
+           @include flexContent(row);
+           justify-content: start;
+           padding: 0px 20px;
+           &:hover{
+             background-color: $default-color;
+             color: #fff;
+           }
+           &::after{
+             display: none;
+           }
+         }
+       }
+     }
+   }
+ } 
+ .home-accounting{
+   .accounting-content{
+     position: relative;
+     flex-direction: column-reverse;
+     .image-box{
+      @include flexContent(row);
+    }
+       img{
+       margin: 3rem 0;
+     }
+   }
+ }
+ .home-why-us{
+   .why-us-content{
+     flex-direction: column;
+     .image-box{
+       @include flexContent(row);
+       img{
+         margin: 0 0 3rem;
+       }
+     }
+     .content-box{
+       text-align: left;
+      p{
+        text-align: justify;
+      }
+     }
+   }
+ }
+}
+@media screen and (max-width: 575px) {
+  :root{
+    --sidePadding: 20px
+  }
+  *{
+    font-size: 14px;
+  }
+  #header{
+    .blog-link{
+      display: none;
+    }
+    .head-call{
+      a.invis{
+        display: none;
+      }
+      .head-btn-number{
+        display: block;
+      }
+    }
+  }
+  .home-testimonials{
+    padding-bottom: 2rem;
+    .testimonial-content{
+      >div{
+        @include flexContent(column);
+        margin: 0 0 4rem;
+        img{
+          margin: 0 0 2rem;
+        }
+        .content{
+          @include flexContent(column);
+          p.review-msg{
+            width: 60vw;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    .carousel-indicators{
+      bottom: 0;
+    }
   }
 }

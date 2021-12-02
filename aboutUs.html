@@ -38,32 +38,58 @@
       <div class="head-contact">
         <div class="head-menu">
           <a href="#" class="head-btn">Best Practice for Accountancy</a>
-          <a href="./blog.html">Blog</a>
+          <a href="./blog.html" class="blog-link">Blog</a>
           <a href="./contactUs.html">Help</a>
         </div>
         <div class="head-call">
-          <a href="tel:+919929355516" class="head-btn"
-            >Contact Us: +919929355516</a
-          >
+          <a href="tel:+918800221252" class="head-btn invis">
+            Contact Us: +918800221252
+          </a>
+          <a href="tel:+918800221252" class="head-btn head-btn-number">
+            +918800221252
+          </a>
         </div>
       </div>
-      <nav class="navbar">
-        <div class="navbar-brand">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">
           <img
             src="./images/Ujjwal-Kapoor-logo.webp"
             alt="Ujjwal Kapoor logo"
             class="navbar-logo"
           />
-        </div>
-        <div class="navbar-menu">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html">Home</a></li>
-            <li class="nav-item"><a href="./services.html">Services</a></li>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-menu offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          data-bs-scroll="true"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <ul class="nav-list navbar-nav">
             <li class="nav-item">
-              <a href="./testimonials.html">Testimonials</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item"><a href="./aboutUs.html">About Us</a></li>
-            <li class="nav-item"><a href="./ContactUs.html">Contact Us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactUs.html">Contact Us</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -323,35 +349,6 @@
           <img src="./images/29 1.png" alt="Team work illustration" />
         </div>
       </div>
-      <!-- <div class="info-container">
-        <div class="info">
-          <p>
-            We'd like to provide you with an opportunity to get to know our
-            staff as well as our firm's values before you come to see us. The
-            following pages should give you an idea of what we're all about. We
-            hope you enjoy them!
-          </p>
-
-          <h3><a href="#">Our Experiances</a></h3>
-          <p>
-            Our firm provides outstanding service to our clients some of which
-            are
-          </p>
-
-          <h3><a href="#">Client Reviews </a></h3>
-          <p>
-            We strive to provide the best possible service for our clients.
-            Please leave a review to let us know how we are doing and to share
-            your experience with others.
-          </p>
-
-          <h3><a href="#">Our Employees </a></h3>
-          <p>
-            Check this page from time to time for specific employment
-            opportunities.
-          </p>
-        </div>
-      </div> -->
     </section>
     <footer id="footer">
       <div class="footer-contact row">
@@ -389,7 +386,7 @@
         </div>
       </div>
       <div class="footer-content row">
-        <div class="col-xl-5 col-md-6 col-12">
+        <div class="col-xl-5 col-12">
           <h4>Ujjwal Kapoor and Associates</h4>
           <p>
             We are CA specialized in providing various accounting, bookkeeping,
@@ -439,7 +436,7 @@
             <li><a href="">Help</a></li>
           </ul>
         </div>
-        <div class="col-xl-3 col-md-6 col-12">
+        <div class="col-xl-3 col-12">
           <h4>Contact</h4>
           <ul class="contact-details footer-list">
             <li>
@@ -469,7 +466,7 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            Ujjwal Kapoor and Associates All Rights Reserved | This Website is
+            Ujjwal Kapoor and Associates All Rights Reserved | This Website was
             made with <i class="fas fa-heart"></i> by
             <a href="https://completesolutions.net.in/">Complete Solutions.</a>
           </p>
