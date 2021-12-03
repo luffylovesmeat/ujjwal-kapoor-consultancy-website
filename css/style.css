@@ -464,7 +464,7 @@ h2 {
 .home-why-us {
   position: relative;
   z-index: 1;
-  padding: 100px 0;
+  padding: 5rem 0;
   padding-left: var(--sidePadding);
   padding-right: var(--sidePadding);
 }
@@ -1262,10 +1262,10 @@ h2 {
     bottom: 0;
   }
   .home-accounting .accounting-content .image-box img {
-    max-width: 90vw;
+    max-width: 80vw;
   }
   .home-why-us .why-us-content .image-box img {
-    max-width: 90vw;
+    max-width: 80vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

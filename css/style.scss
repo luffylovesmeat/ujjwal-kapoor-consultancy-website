@@ -305,7 +305,7 @@ h2 {
 .home-why-us {
   position: relative;
   z-index: 1;
-  padding: 100px 0;
+  padding: 5rem 0;
   @include initPadding(var(--sidePadding));
   .home-contact-btn {
     margin-top: 1.5rem;
@@ -885,7 +885,7 @@ h2 {
     .accounting-content{
       .image-box{
         img{
-          max-width: 90vw;
+          max-width: 80vw;
         }
       }
     }
@@ -894,7 +894,7 @@ h2 {
     .why-us-content{
       .image-box{
         img{
-          max-width: 90vw;
+          max-width: 80vw;
         }
       }
     }
