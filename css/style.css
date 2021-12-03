@@ -212,6 +212,7 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  white-space: nowrap;
 }
 
 #header .navbar .navbar-menu a {
@@ -590,10 +591,12 @@ h2 {
 }
 
 .sub-header .title {
+  background: url("../images/layered-waves-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   position: relative;
   height: 12rem;
-  background: #369fa4;
-  color: #fff;
   padding: 0;
   padding-left: var(--sidePadding);
   padding-right: var(--sidePadding);
@@ -616,6 +619,8 @@ h2 {
 }
 
 .sub-header .title h1 {
+  color: #fff;
+  text-shadow: 1px 1px 20px #000;
   position: relative;
   z-index: 3;
 }
@@ -661,10 +666,6 @@ h2 {
 
 .about-page-content .about-us h2 {
   margin-bottom: 2rem;
-}
-
-.about-page-content .about-us .box-head-2 {
-  margin-top: 3rem;
 }
 
 .our-teams {
@@ -914,6 +915,7 @@ h2 {
 }
 
 #footer .footer-contact .col-block h4 {
+  white-space: nowrap;
   margin-top: 40px;
   margin-bottom: 15px;
 }
@@ -1054,8 +1056,7 @@ h2 {
 
 @media screen and (max-width: 991px) {
   :root {
-    --sidePadding: 60px
-  ;
+    --sidePadding: 60px;
   }
   #header .navbar .navbar-menu .nav-item {
     padding: 5px 0px 5px 16px;
@@ -1066,7 +1067,9 @@ h2 {
   #footer .footer-contact > div {
     margin-bottom: 4rem;
   }
-  #footer .footer-content .col-xl-5, #footer .footer-content .col-xl-2, #footer .footer-content .col-12 {
+  #footer .footer-content .col-xl-5,
+  #footer .footer-content .col-xl-2,
+  #footer .footer-content .col-12 {
     padding-right: 0;
     padding-left: 0;
   }
@@ -1079,21 +1082,109 @@ h2 {
   .contact-img-box .contact-img {
     display: none;
   }
+  .about-page-content .about-us .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-page-content .about-us .about-us-content img.about-img {
+    margin: 0 0 3rem;
+    max-width: 50vw;
+  }
+  .about-page-content .about-us .col-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .our-teams .teams-content .team-containers .team-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-teams .teams-content .team-containers .team-box .team-details {
+    margin: 0;
+  }
+  .team-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 2rem;
+  }
+  .team-imgs img {
+    width: 40vw;
+  }
+  .more-info .more-info-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .more-info .more-info-content .image-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .more-info .more-info-content .image-box img {
+    margin: 0 0 2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   :root {
-    --sidePadding: 40px
-  ;
+    --sidePadding: 40px;
   }
-  #header .head-contact {
+  .col-reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #header .head-contact .head-menu .head-btn {
     display: none;
@@ -1198,12 +1289,38 @@ h2 {
   .home-why-us .why-us-content .content-box p {
     text-align: justify;
   }
+  .about-page-content .the-firm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-page-content .the-firm .image-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-page-content .the-firm .image-box img {
+    margin: 0 0 4rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
   :root {
-    --sidePadding: 20px
-  ;
+    --sidePadding: 20px;
   }
   * {
     font-size: 14px;
@@ -1265,6 +1382,61 @@ h2 {
     max-width: 80vw;
   }
   .home-why-us .why-us-content .image-box img {
+    max-width: 80vw;
+  }
+  .team-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team-imgs img {
+    width: 60vw;
+  }
+  .about-page-content .about-us .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-page-content .about-us .about-us-content img.about-img {
+    max-width: 80vw;
+  }
+  .about-page-content .about-us .about-us-content.col-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .more-info .more-info-content .image-box img {
+    margin: 0 0 2rem;
     max-width: 80vw;
   }
 }
