@@ -63,6 +63,10 @@ h2 {
   }
 }
 
+.center{
+  @include flexContent(row);
+}
+
 #particles-js,
 .particle-background {
   background: $default-color;
@@ -516,6 +520,7 @@ h2 {
   padding-bottom: 60px;
   margin-bottom: 170px;
   background-position: center top;
+  
 
   .container {
     position: relative;
@@ -533,17 +538,6 @@ h2 {
 
 .contact2 .font-weight-medium {
   font-weight: 500;
-}
-
-.contact2 .subtitle {
-  color: #8d97ad;
-  line-height: 24px;
-}
-
-.contact2 .bg-image {
-  background-size: cover;
-  position: relative;
-  display: flex;
 }
 
 .contact2 .card.card-shadow {
@@ -593,6 +587,9 @@ h2 {
 }
 
 .contact-box {
+  .button-box{
+    padding-top: 1.5rem;
+  }
   button[type="submit"] {
     background-color: $default-color;
     &:hover {
@@ -758,6 +755,14 @@ h2 {
       bottom: -10%;
     }
   }
+  .contact2{
+    margin-bottom: 19rem;
+  }
+  .contact-img-box {
+    .contact-img {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -874,6 +879,24 @@ h2 {
     }
     .carousel-indicators{
       bottom: 0;
+    }
+  }
+  .home-accounting{
+    .accounting-content{
+      .image-box{
+        img{
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+  .home-why-us{
+    .why-us-content{
+      .image-box{
+        img{
+          max-width: 90vw;
+        }
+      }
     }
   }
 }
