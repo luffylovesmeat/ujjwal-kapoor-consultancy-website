@@ -2,10 +2,9 @@
 
 $default-color: #369fa4;
 
-:root{
+:root {
   --sidePadding: 80px;
 }
-
 
 @mixin initPadding($pad) {
   padding-left: $pad;
@@ -63,7 +62,7 @@ h2 {
   }
 }
 
-.center{
+.center {
   @include flexContent(row);
 }
 
@@ -100,7 +99,7 @@ h2 {
     background: $default-color;
     padding: 0px;
     @include initPadding(var(--sidePadding));
-    .head-btn-number{
+    .head-btn-number {
       display: none;
     }
     .head-btn {
@@ -141,6 +140,7 @@ h2 {
       .nav-item {
         padding: 5px 0px 5px 24px;
         width: fit-content;
+        white-space: nowrap;
       }
       a {
         position: relative;
@@ -159,7 +159,7 @@ h2 {
           transform: translateY(10px);
           transition: all 0.3s ease;
         }
-        &:hover::after{
+        &:hover::after {
           background-color: $default-color;
           transform: translateY(0px);
         }
@@ -168,10 +168,9 @@ h2 {
   }
 }
 
-.offcanvas{
+.offcanvas {
   max-width: 50vw;
 }
-
 
 //* Home Styles
 .home-welcome {
@@ -269,7 +268,7 @@ h2 {
 .home-accounting {
   padding: 100px 0 50px;
   @include initPadding(var(--sidePadding));
-  .heading-box{
+  .heading-box {
     position: relative;
     &::before {
       content: "";
@@ -365,7 +364,7 @@ h2 {
     }
   }
   .testimonial-content {
-    img{
+    img {
       margin-right: 2.5rem;
     }
     > div {
@@ -390,15 +389,19 @@ h2 {
 }
 .sub-header {
   .title {
+    background: url("../images/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     position: relative;
     height: 12rem;
-    background: $default-color;
-    color: #fff;
     padding: 0;
     @include initPadding(var(--sidePadding));
     @include flexContent(row);
     justify-content: start;
     h1 {
+      color: #fff;
+      text-shadow: 1px 1px 20px #000;
       position: relative;
       z-index: 3;
     }
@@ -433,9 +436,9 @@ h2 {
     h2 {
       margin-bottom: 2rem;
     }
-    .box-head-2 {
-      margin-top: 3rem;
-    }
+    // .box-head-2 {
+    //   margin-top: 3rem;
+    // }
   }
 }
 .our-teams {
@@ -520,7 +523,6 @@ h2 {
   padding-bottom: 60px;
   margin-bottom: 170px;
   background-position: center top;
-  
 
   .container {
     position: relative;
@@ -587,7 +589,7 @@ h2 {
 }
 
 .contact-box {
-  .button-box{
+  .button-box {
     padding-top: 1.5rem;
   }
   button[type="submit"] {
@@ -612,6 +614,7 @@ h2 {
         height: 120px;
       }
       h4 {
+        white-space: nowrap;
         margin-top: 40px;
         margin-bottom: 15px;
       }
@@ -632,13 +635,14 @@ h2 {
     .col-xl-5 {
       padding-right: 50px;
     }
-    >div{
+    > div {
       padding-bottom: 50px;
     }
     h4 {
       margin-bottom: 30px;
       position: relative;
       font-size: 18px;
+      // white-space: nowrap;
       font-weight: 600;
       color: #fff;
 
@@ -688,7 +692,7 @@ h2 {
         padding: 4px 0px;
         a {
           color: #ffffff99;
-          &:hover{
+          &:hover {
             color: #ffffff33;
           }
         }
@@ -721,41 +725,42 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
-  :root{
-    --sidePadding: 60px
+  :root {
+    --sidePadding: 60px;
   }
-  #header{
-    .navbar{
-      .navbar-menu{
+  #header {
+    .navbar {
+      .navbar-menu {
         .nav-item {
           padding: 5px 0px 5px 16px;
-          a{
+          a {
             font-size: 16px;
           }
         }
       }
     }
   }
-  #footer{
-    .footer-contact{
-      >div{
+  #footer {
+    .footer-contact {
+      > div {
         margin-bottom: 4rem;
       }
     }
-    .footer-content{
-      .col-xl-5, .col-xl-2,.col-12{
+    .footer-content {
+      .col-xl-5,
+      .col-xl-2,
+      .col-12 {
         padding-right: 0;
         padding-left: 0;
       }
     }
   }
-  .home-testimonials{
-
-    .carousel-indicators{
+  .home-testimonials {
+    .carousel-indicators {
       bottom: -10%;
     }
   }
-  .contact2{
+  .contact2 {
     margin-bottom: 19rem;
   }
   .contact-img-box {
@@ -763,137 +768,236 @@ h2 {
       display: none;
     }
   }
+  .about-page-content {
+    // .the-firm {
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    //   .image-box {
+    //     @include flexContent(row);
+    //     img {
+    //       margin: 0 0 4rem;
+    //     }
+    //   }
+    // }
+    .about-us {
+      .about-us-content {
+        @include flexContent(column);
+        img.about-img {
+          margin: 0 0 3rem;
+          max-width: 50vw;
+        }
+      }
+      .col-reverse {
+        @include flexContent(column-reverse);
+      }
+    }
+  }
+  .our-teams {
+    .teams-content {
+      .team-containers {
+        .team-box {
+          flex-direction: column;
+          .team-details {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .team-imgs {
+    @include flexContent(column);
+    margin: 0 0 2rem;
+    img {
+      width: 40vw;
+    }
+  }
+  .more-info{
+    .more-info-content{
+      display: flex;
+      flex-direction: column-reverse;
+      .image-box{
+        @include flexContent(row);
+        img{
+          margin: 0 0 2rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-  :root{
-    --sidePadding: 40px
+  :root {
+    --sidePadding: 40px;
   }
-  
- #header{
-   .head-contact{
-     display: flex;
-     flex-direction: row-reverse;
-     .head-menu{
-       .head-btn{
-         display: none;
+  .col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #header {
+    .head-contact {
+      .head-menu {
+        .head-btn {
+          display: none;
         }
-     }
-   }
-   .navbar{
-     .navbar-menu{
-       .nav-list{
-         flex-direction: column;
-         justify-content: start;
-         align-items: center;
-         .nav-item{
-           padding: 0;
-           width: 100%;
-         }
-         a{
-           font-size: 18px;
-           width: 100%;
-           height: 4rem;
-           @include flexContent(row);
-           justify-content: start;
-           padding: 0px 20px;
-           &:hover{
-             background-color: $default-color;
-             color: #fff;
-           }
-           &::after{
-             display: none;
-           }
-         }
-       }
-     }
-   }
- } 
- .home-accounting{
-   .accounting-content{
-     position: relative;
-     flex-direction: column-reverse;
-     .image-box{
-      @include flexContent(row);
-    }
-       img{
-       margin: 3rem 0;
-     }
-   }
- }
- .home-why-us{
-   .why-us-content{
-     flex-direction: column;
-     .image-box{
-       @include flexContent(row);
-       img{
-         margin: 0 0 3rem;
-       }
-     }
-     .content-box{
-       text-align: left;
-      p{
-        text-align: justify;
       }
-     }
-   }
- }
-}
-@media screen and (max-width: 575px) {
-  :root{
-    --sidePadding: 20px
+    }
+    .navbar {
+      .navbar-menu {
+        .nav-list {
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          .nav-item {
+            padding: 0;
+            width: 100%;
+          }
+          a {
+            font-size: 18px;
+            width: 100%;
+            height: 4rem;
+            @include flexContent(row);
+            justify-content: start;
+            padding: 0px 20px;
+            &:hover {
+              background-color: $default-color;
+              color: #fff;
+            }
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
-  *{
+  .home-accounting {
+    .accounting-content {
+      position: relative;
+      flex-direction: column-reverse;
+      .image-box {
+        @include flexContent(row);
+      }
+      img {
+        margin: 3rem 0;
+      }
+    }
+  }
+  .home-why-us {
+    .why-us-content {
+      flex-direction: column;
+      .image-box {
+        @include flexContent(row);
+        img {
+          margin: 0 0 3rem;
+        }
+      }
+      .content-box {
+        text-align: left;
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+  .about-page-content {
+    .the-firm {
+      display: flex;
+      flex-direction: column-reverse;
+      .image-box {
+        @include flexContent(row);
+        img {
+          margin: 0 0 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  :root {
+    --sidePadding: 20px;
+  }
+  * {
     font-size: 14px;
   }
-  #header{
-    .blog-link{
+  #header {
+    .blog-link {
       display: none;
     }
-    .head-call{
-      a.invis{
+    .head-call {
+      a.invis {
         display: none;
       }
-      .head-btn-number{
+      .head-btn-number {
         display: block;
       }
     }
   }
-  .home-testimonials{
+  .home-testimonials {
     padding-bottom: 2rem;
-    .testimonial-content{
-      >div{
+    .testimonial-content {
+      > div {
         @include flexContent(column);
         margin: 0 0 4rem;
-        img{
+        img {
           margin: 0 0 2rem;
         }
-        .content{
+        .content {
           @include flexContent(column);
-          p.review-msg{
+          p.review-msg {
             width: 60vw;
             text-align: justify;
           }
         }
       }
     }
-    .carousel-indicators{
+    .carousel-indicators {
       bottom: 0;
     }
   }
-  .home-accounting{
-    .accounting-content{
-      .image-box{
-        img{
+  .home-accounting {
+    .accounting-content {
+      .image-box {
+        img {
           max-width: 80vw;
         }
       }
     }
   }
-  .home-why-us{
-    .why-us-content{
+  .home-why-us {
+    .why-us-content {
+      .image-box {
+        img {
+          max-width: 80vw;
+        }
+      }
+    }
+  }
+  .team-imgs {
+    @include flexContent(column);
+    img {
+      width: 60vw;
+    }
+  }
+  .about-page-content {
+    .about-us {
+      .about-us-content {
+        @include flexContent(column);
+        img.about-img {
+          max-width: 80vw;
+        }
+      }
+      .about-us-content.col-reverse{
+        @include flexContent(column-reverse);
+      }
+    }
+  }
+  .more-info{
+    .more-info-content{
       .image-box{
         img{
+          margin: 0 0 2rem;
           max-width: 80vw;
         }
       }
