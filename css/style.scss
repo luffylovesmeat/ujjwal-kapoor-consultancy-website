@@ -606,13 +606,13 @@ h2 {
 
 //* Thank You Styles
 .main-thanku {
-  position: relative;
   .thank-you {
     position: relative;
     color: $default-color;
     padding: 5rem 0 1rem;
     @include initPadding(var(--sidePadding));
     .thank {
+      @include flexContent(column);
       text-align: center;
       justify-content: center;
       h4 {
@@ -621,6 +621,8 @@ h2 {
     }
   }
 }
+
+
 
 //* footer styles
 #footer {
