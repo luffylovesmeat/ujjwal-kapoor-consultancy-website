@@ -227,7 +227,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   left: 0;
   bottom: 0;
   -webkit-transform: translateY(10px);
@@ -885,10 +885,13 @@ h2 {
   background-color: #5eb2b7;
 }
 
+.main-thanku {
+  padding: 6rem 0 5rem;
+}
+
 .main-thanku .thank-you {
   position: relative;
   color: #369fa4;
-  padding: 5rem 0 1rem;
   padding-left: var(--sidePadding);
   padding-right: var(--sidePadding);
 }
