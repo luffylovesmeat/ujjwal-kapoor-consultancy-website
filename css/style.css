@@ -885,6 +885,22 @@ h2 {
   background-color: #5eb2b7;
 }
 
+.main-thanku {
+  position: relative;
+}
+
+.main-thanku .thank-you {
+  position: relative;
+  color: #369fa4;
+  padding: 5rem 0 1rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+}
+
+.main-thanku .thank-you .thank {
+  text-align: center;
+}
+
 #footer .footer-contact {
   background-color: #edfeff;
   border-top: 1px solid #aafbff;
