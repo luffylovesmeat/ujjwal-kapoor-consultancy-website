@@ -600,6 +600,14 @@ h2 {
   }
 }
 
+//* Service Styles
+.service_info {
+
+}
+//* Thank you Styles
+.center {
+  @mixin flexContent(row);
+}
 //* footer styles
 #footer {
   .footer-contact {
