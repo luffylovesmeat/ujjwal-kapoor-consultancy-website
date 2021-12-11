@@ -602,6 +602,8 @@ h2 {
 
 //* Service Styles
 
+
+
 //* Thank You Styles
 .main-thanku {
   position: relative;
@@ -612,6 +614,10 @@ h2 {
     @include initPadding(var(--sidePadding));
     .thank {
       text-align: center;
+      justify-content: center;
+      h4 {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

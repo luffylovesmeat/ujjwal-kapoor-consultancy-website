@@ -899,6 +899,13 @@ h2 {
 
 .main-thanku .thank-you .thank {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-thanku .thank-you .thank h4 {
+  margin-bottom: 1rem;
 }
 
 #footer .footer-contact {
