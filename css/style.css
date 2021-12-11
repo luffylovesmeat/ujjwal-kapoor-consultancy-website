@@ -885,6 +885,36 @@ h2 {
   background-color: #5eb2b7;
 }
 
+.main-thanku .thank-you {
+  position: relative;
+  color: #369fa4;
+  padding: 5rem 0 1rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+}
+
+.main-thanku .thank-you .thank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-thanku .thank-you .thank h4 {
+  margin-bottom: 1rem;
+}
+
 #footer .footer-contact {
   background-color: #edfeff;
   border-top: 1px solid #aafbff;

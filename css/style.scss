@@ -601,13 +601,29 @@ h2 {
 }
 
 //* Service Styles
-.service_info {
 
+
+
+//* Thank You Styles
+.main-thanku {
+  .thank-you {
+    position: relative;
+    color: $default-color;
+    padding: 5rem 0 1rem;
+    @include initPadding(var(--sidePadding));
+    .thank {
+      @include flexContent(column);
+      text-align: center;
+      justify-content: center;
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
-//* Thank you Styles
-.center {
-  @mixin flexContent(row);
-}
+
+
+
 //* footer styles
 #footer {
   .footer-contact {
