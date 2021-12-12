@@ -176,16 +176,17 @@ h2 {
 .home-welcome {
   position: relative;
   z-index: 1;
+  color: #fff;
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../images/austin-distel-jpHw8ndwJ_Q-unsplash.webp");
+    background: url("../images/Group_46.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transform: scaleX(-1);
+
     filter: blur(3px);
     z-index: 2;
   }
@@ -629,17 +630,23 @@ h2 {
 
 //* Coming Soon Style
 .main-coming {
-  padding: 10rem 0 5rem;
+  padding: 5rem 0 4rem;
+  @include initPadding(var(--sidePadding));
+  text-align: center;
   .coming-soon {
-    position: relative;
-    color: $default-color;
-    @include initPadding(var(--sidePadding));
-    .come {
-      @include flexContent(column);
-      text-align: center;
-      justify-content: center;
-    }
+    width: 100%;
+    justify-content: center;
+  }
 }
+.come {
+  @include flexContent(column);
+  h1{
+    color: $default-color;
+  }
+}
+.come-img{
+  margin-top: 2rem;
+  width: 359px;
 }
 
 
@@ -1045,5 +1052,14 @@ h2 {
         }
       }
     }
+  }
+  .main-coming{
+    .coming-soon{
+      .come{
+      }
+    }
+  }
+  .come-img{
+    width: 80vw;
   }
 }
