@@ -249,6 +249,7 @@ h2 {
 .home-welcome {
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 
 .home-welcome::before {
@@ -256,12 +257,10 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../images/austin-distel-jpHw8ndwJ_Q-unsplash.webp");
+  background: url("../images/Group_46.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   -webkit-filter: blur(3px);
           filter: blur(3px);
   z-index: 2;
@@ -924,17 +923,20 @@ h2 {
 }
 
 .main-coming {
-  padding: 10rem 0 5rem;
+  padding: 5rem 0 4rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+  text-align: center;
 }
 
 .main-coming .coming-soon {
-  position: relative;
-  color: #369fa4;
-  padding-left: var(--sidePadding);
-  padding-right: var(--sidePadding);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main-coming .coming-soon .come {
+.come {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,8 +950,15 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  justify-content: center;
+}
+
+.come h1 {
+  color: #369fa4;
+}
+
+.come-img {
+  margin-top: 2rem;
+  width: 359px;
 }
 
 #footer .footer-contact {
@@ -1505,6 +1514,9 @@ h2 {
   .more-info .more-info-content .image-box img {
     margin: 0 0 2rem;
     max-width: 80vw;
+  }
+  .come-img {
+    width: 80vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
