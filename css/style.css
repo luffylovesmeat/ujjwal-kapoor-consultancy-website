@@ -885,8 +885,25 @@ h2 {
   background-color: #5eb2b7;
 }
 
-.row {
-  padding: 1.5 rem;
+.experiance-page-content .container {
+  padding: 0;
+  margin: 0;
+}
+
+.experiance-page-content .row {
+  width: 100vw;
+  margin: 0;
+  padding: 5rem 0 4rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+}
+
+.experiance-page-content .row h2 {
+  color: #369fa4;
+}
+
+.experiance-page-content .row h3 {
+  color: #2AC6CD;
 }
 
 .main-thanku {
