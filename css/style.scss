@@ -590,6 +590,7 @@ h2 {
 
 .contact-box {
   .button-box {
+    position: absolute;
     padding-top: 1.5rem;
   }
   button[type="submit"] {
@@ -603,6 +604,10 @@ h2 {
 //* Service Styles
 
 
+//*Experiance Styles
+.row {
+  padding: 1.5 rem;
+}
 
 //* Thank You Styles
 .main-thanku {
@@ -622,6 +627,20 @@ h2 {
   }
 }
 
+//* Coming Soon Style
+.main-coming {
+  padding: 10rem 0 5rem;
+  .coming-soon {
+    position: relative;
+    color: $default-color;
+    @include initPadding(var(--sidePadding));
+    .come {
+      @include flexContent(column);
+      text-align: center;
+      justify-content: center;
+    }
+}
+}
 
 
 //* footer styles

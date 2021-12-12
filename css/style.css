@@ -874,6 +874,7 @@ h2 {
 }
 
 .contact-box .button-box {
+  position: absolute;
   padding-top: 1.5rem;
 }
 
@@ -883,6 +884,10 @@ h2 {
 
 .contact-box button[type="submit"]:hover {
   background-color: #5eb2b7;
+}
+
+.row {
+  padding: 1.5 rem;
 }
 
 .main-thanku {
@@ -916,6 +921,35 @@ h2 {
 
 .main-thanku .thank-you .thank h4 {
   margin-bottom: 1rem;
+}
+
+.main-coming {
+  padding: 10rem 0 5rem;
+}
+
+.main-coming .coming-soon {
+  position: relative;
+  color: #369fa4;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+}
+
+.main-coming .coming-soon .come {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 #footer .footer-contact {
