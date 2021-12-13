@@ -896,7 +896,9 @@ h2 {
 
 .service_portfolio {
   position: relative;
-  padding: 5.5rem;
+  padding: 5rem 0 4rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
 }
 
 .service_portfolio .service-container {
@@ -908,55 +910,45 @@ h2 {
   margin: 1rem;
 }
 
-.service_portfolio .portfolio-txt h2 {
+.service_portfolio .portfolio-txt h1 {
+  color: #fff;
   margin: 0px 0px 1rem;
   padding: 1rem 0 3rem;
   text-align: center;
 }
 
-.service_portfolio .portfolio-txt .box {
-  position: relative;
-  width: 65%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.service_portfolio .portfolio-txt .card {
-  background-color: #fff;
-  width: 400px;
-  height: 260px;
-  border-radius: 50px;
-}
-
-.det-serv-txt {
-  padding: 2rem 2rem 0;
-  margin: 1rem 0 0;
-  margin-left: 5rem;
-}
-
-.row {
-  width: 100%;
+.service-box.row {
   margin: 0;
-  padding: 3.5rem 0 4rem;
+}
+
+.service-box.row .card {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  width: 45%;
+}
+
+.detail-services {
+  padding: 3 rem 0 4rem;
   padding-left: var(--sidePadding);
   padding-right: var(--sidePadding);
 }
 
-.row h3 {
-  margin-bottom: 0.3rem;
+.detail-services .container {
+  padding: 0;
+  margin: 0;
+}
+
+.detail-services .col-sm {
+  padding: 1rem;
+  margin: 0;
+}
+
+.detail-services .col-sm h3 {
   color: #369fa4;
+}
+
+.det-serv-txt {
+  padding: 2rem 0 2rem;
 }
 
 .experiance-page-content .container {
@@ -1106,6 +1098,30 @@ h2 {
 
 #footer .footer-content .col-xl-5 {
   padding-right: 50px;
+  height: 18rem;
+}
+
+#footer .footer-content .col-xl-5 a {
+  color: #ffffff99;
+}
+
+#footer .footer-content .col-xl-5 a:hover {
+  color: #ffffff33;
+}
+
+#footer .footer-content .col-xl-5 .important-links-box {
+  overflow-y: auto;
+  height: 8rem;
+}
+
+#footer .footer-content .col-xl-5 .important-links-box ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer .footer-content .col-xl-5 .important-links-box ul li {
+  margin: 0;
+  padding: 0;
 }
 
 #footer .footer-content > div {
@@ -1136,6 +1152,7 @@ h2 {
 }
 
 #footer .footer-content .socials {
+  margin-top: 2rem;
   list-style: none;
   padding: 0;
 }
@@ -1482,6 +1499,9 @@ h2 {
   }
   .about-page-content .the-firm .image-box img {
     margin: 0 0 4rem;
+  }
+  .service-box.row .card {
+    width: 80%;
   }
 }
 
