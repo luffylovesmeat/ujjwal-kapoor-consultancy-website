@@ -261,8 +261,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
   z-index: 2;
 }
 
@@ -619,7 +617,7 @@ h2 {
 
 .sub-header .title h1 {
   color: #fff;
-  text-shadow: 1px 1px 20px #000;
+  text-shadow: 1px 1px 5px #000;
   position: relative;
   z-index: 3;
 }
@@ -873,7 +871,6 @@ h2 {
 }
 
 .contact-box .button-box {
-  position: absolute;
   padding-top: 1.5rem;
 }
 
@@ -914,6 +911,7 @@ h2 {
   color: #fff;
   margin: 0px 0px 1rem;
   padding: 1rem 0 3rem;
+  text-shadow: 1px 1px 5px #000;
   text-align: center;
 }
 
