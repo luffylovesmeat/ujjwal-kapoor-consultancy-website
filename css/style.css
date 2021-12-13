@@ -588,7 +588,7 @@ h2 {
 }
 
 .sub-header .title {
-  background: url("../images/layered-waves-haikei.svg");
+  background: url("../images/stacked-waves-haikei (3).svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -617,7 +617,7 @@ h2 {
 
 .sub-header .title h1 {
   color: #fff;
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 1px #004241;
   position: relative;
   z-index: 3;
 }
@@ -636,7 +636,7 @@ h2 {
 }
 
 .about-page-content .the-firm img {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .about-page-content .the-firm h2 {
@@ -885,6 +885,7 @@ h2 {
 .txt_header .services_info {
   padding: 3rem;
   margin: 1rem;
+  margin-right: 1rem;
 }
 
 .txt_header .services_info h2 {

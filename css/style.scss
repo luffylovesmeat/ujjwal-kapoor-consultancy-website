@@ -390,7 +390,7 @@ h2 {
 }
 .sub-header {
   .title {
-    background: url("../images/layered-waves-haikei.svg");
+    background: url("../images/stacked-waves-haikei (3).svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -402,7 +402,7 @@ h2 {
     justify-content: start;
     h1 {
       color: #fff;
-      text-shadow: 1px 1px 5px #000;
+      text-shadow: 1px 1px 1px #004241;
       position: relative;
       z-index: 3;
     }
@@ -417,7 +417,7 @@ h2 {
     @include initPadding(var(--sidePadding));
     box-shadow: 0px 1px 5px -2px #666666;
     img {
-      margin-left: 4rem;
+      margin-left: 2rem;
     }
     h2 {
       margin-bottom: 2rem;
@@ -608,6 +608,7 @@ h2 {
   .services_info {
     padding: 3rem;
     margin: 1rem;
+    margin-right: 1rem;
     h2 {
       margin: 0px 0px 2rem;
     }
