@@ -1,0 +1,75 @@
+Date : 2021-12-13 21:23:49
+Directory : d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website
+Total : 37 files,  7470 codes, 182 comments, 804 blanks, all 8456 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          9 |      2,984 |          4 |        108 |      3,096 |
+| CSS        |          3 |      1,531 |         11 |        189 |      1,731 |
+| JavaScript |          5 |      1,314 |        132 |        405 |      1,851 |
+| SCSS       |          1 |      1,075 |         35 |         66 |      1,176 |
+| JSON       |          4 |        275 |          0 |          1 |        276 |
+| Markdown   |          3 |        237 |          0 |         31 |        268 |
+| XML        |         12 |         54 |          0 |          4 |         58 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                               | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                  |         37 |      7,470 |        182 |        804 |      8,456 |
+| css                                                                                                                |          3 |      2,537 |         37 |        236 |      2,810 |
+| images                                                                                                             |         12 |         54 |          0 |          4 |         58 |
+| script                                                                                                             |         13 |      1,933 |        145 |        460 |      2,538 |
+| script\particles                                                                                                   |         11 |      1,805 |        145 |        459 |      2,409 |
+| script\particles\demo                                                                                              |          5 |        438 |         26 |         79 |        543 |
+| script\particles\demo\css                                                                                          |          1 |         69 |          9 |         19 |         97 |
+| script\particles\demo\js                                                                                           |          2 |        214 |         13 |         55 |        282 |
+| script\particles\demo\js\lib                                                                                       |          1 |         96 |          3 |         50 |        149 |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                           | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\README.md                               | Markdown   |          1 |          0 |          1 |          2 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\aboutUs.html                            | HTML       |        439 |          0 |          6 |        445 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\coming.html                             | HTML       |        204 |          0 |          8 |        212 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\contactUs.html                          | HTML       |        304 |          0 |          8 |        312 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\css\style.css                           | CSS        |      1,461 |          1 |        170 |      1,632 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\css\style.min.css                       | CSS        |          1 |          1 |          0 |          2 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\css\style.scss                          | SCSS       |      1,075 |         35 |         66 |      1,176 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\experience.html                         | HTML       |        572 |          0 |         28 |        600 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\blog.svg                         | XML        |          9 |          0 |          1 |         10 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\coming-soon.svg                  | XML        |          9 |          0 |          1 |         10 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\landing-main-2.svg               | XML        |         14 |          0 |          1 |         15 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\landing-main.svg                 | XML        |         14 |          0 |          1 |         15 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\layered-waves-haikei.svg         | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\stacked-waves-haikei (3).svg     | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_certificate_-343-v.svg    | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_code_thinking_re_gka2.svg | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_contact_us_-15-o2 (1).svg | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_contact_us_-15-o2 (2).svg | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_contact_us_-15-o2.svg     | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\images\undraw_questions_re_1fy7.svg     | XML        |          1 |          0 |          0 |          1 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\index.html                              | HTML       |        542 |          0 |         10 |        552 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\app.js                           | JavaScript |         18 |          0 |          1 |         19 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\LICENSE.md             | Markdown   |         17 |          0 |          5 |         22 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\README.md              | Markdown   |        219 |          0 |         25 |        244 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\bower.json             | JSON       |         21 |          0 |          1 |         22 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\demo\css\style.css     | CSS        |         69 |          9 |         19 |         97 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\demo\index.html        | HTML       |         39 |          4 |          5 |         48 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\demo\js\app.js         | JavaScript |        118 |         10 |          5 |        133 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\demo\js\lib\stats.js   | JavaScript |         96 |          3 |         50 |        149 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\demo\particles.json    | JSON       |        116 |          0 |          0 |        116 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\package.json           | JSON       |         28 |          0 |          0 |         28 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\particles.js           | JavaScript |      1,081 |        111 |        349 |      1,541 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particles\particles.min.js       | JavaScript |          1 |          8 |          0 |          9 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\script\particlesjs-config.json          | JSON       |        110 |          0 |          0 |        110 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\services.html                           | HTML       |        458 |          0 |         27 |        485 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\testimonial.html                        | HTML       |        200 |          0 |         11 |        211 |
+| d:\Complete_Solution\Project_1\Website_1\ujjwal-kapoor-consultancy-website\thanku.html                             | HTML       |        226 |          0 |          5 |        231 |
+| Total                                                                                                              |            |      7,470 |        182 |        804 |      8,456 |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
