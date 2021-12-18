@@ -887,6 +887,21 @@ h2 {
   background-color: #5eb2b7;
 }
 
+.contact-info {
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+  margin: 5rem 0 4rem;
+}
+
+.contact-info h2 {
+  text-align: center;
+  color: #3e4555;
+}
+
+.contact-info .row {
+  padding-top: 2rem;
+}
+
 .txt_header .services_info {
   padding: 3rem;
   margin: 1rem;
@@ -1062,8 +1077,10 @@ strong {
 }
 
 .ujjwal-bio .bio-container {
-  padding: 2rem;
-  margin: 2rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+  margin: 5rem 0 4rem;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1132,17 +1149,23 @@ strong {
   color: #369fa4;
 }
 
+.ujjwal-bio .bio-container .bio-info-2 .container {
+  padding: 0;
+  text-align: left;
+}
+
 .ujjwal-bio .bio-container .bio-info-2 .col-sm p {
   color: #0b6464;
 }
 
 .ujjwal-bio .ujjwal-detail-info {
   margin: 2rem 0;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
 }
 
 .ujjwal-bio .ujjwal-detail-info h2 {
   margin-top: 4rem;
-  margin-left: 4rem;
 }
 
 .ujjwal-bio .ujjwal-detail-info .container {
@@ -1151,11 +1174,7 @@ strong {
 }
 
 .ujjwal-bio .ujjwal-detail-info .row {
-  width: 100vw;
-  margin: 0;
-  padding: 2rem 5rem 5rem 5rem;
-  padding-left: var(--sidePadding);
-  padding-right: var(--sidePadding);
+  margin: 2rem 0 4rem;
 }
 
 .ujjwal-bio .ujjwal-detail-info .row h2 {
