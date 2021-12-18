@@ -605,6 +605,17 @@ h2 {
     }
   }
 }
+.contact-info{
+  @include initPadding(var(--sidePadding));
+  margin: 5rem 0 4rem;
+  h2{
+    text-align: center;
+    color: #3e4555;
+  }
+  .row{
+    padding-top: 2rem;
+  }
+}
 
 //* Service Styles
 
@@ -756,8 +767,9 @@ strong {
 .ujjwal-bio {
   position: relative;
   .bio-container {
-    padding : 2rem ;
-    margin: 2rem;
+    @include initPadding(var(--sidePadding));
+    margin: 5rem 0 4rem;
+    text-align: justify;
     display: flex;
     .bio-info-1 {
       padding-left: 0.5rem;
@@ -796,8 +808,12 @@ strong {
         padding-right: 1rem;
        h2 {
          color: $default-color;
-         
-       }
+       
+        }
+        .container{
+          padding: 0;
+          text-align: left;
+        }
        .col-sm {
          p {
             color: #0b6464;
@@ -808,19 +824,19 @@ strong {
 
   .ujjwal-detail-info {
     margin: 2rem 0;
+    @include initPadding(var(--sidePadding));
     h2 {
       margin-top: 4rem;
-      margin-left: 4rem;
+      // margin-left: 4rem;
     }
     .container {
       padding: 0;
       margin: 0;
     }
     .row {
-      width: 100vw;
-      margin: 0;
-      padding: 2rem 5rem 5rem 5rem;
-      @include initPadding(var(--sidePadding));
+      margin: 2rem 0 4rem;
+      // padding: 2rem 5rem 5rem 5rem;
+      // @include initPadding(var(--sidePadding));
       h2 {
         color: $default-color;
       }
