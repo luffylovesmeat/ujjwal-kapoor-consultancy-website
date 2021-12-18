@@ -517,6 +517,10 @@ h2 {
   }
 }
 
+.btn-makeover {
+  border: 1px solid $default-color;
+  color: $default-color;
+}
 //* Contact Styles
 .contact2 {
   color: #8d97ad;
@@ -665,6 +669,14 @@ h2 {
   padding: 2rem 0 2rem;
 }
 
+.desclaimer {
+  padding: 2rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #0E494B;
+}
 // .row {
 //   width: 100%;
 //   margin: 0;
@@ -739,6 +751,91 @@ h2 {
   margin-top: 2rem;
   width: 359px;
 }
+
+//* Ujjwal styles
+.ujjwal-bio {
+  position: relative;
+  .bio-container {
+    padding : 2rem ;
+    margin: 2rem;
+    display: flex;
+    .bio-info-1 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      width: 50%;
+      justify-content: center;
+      
+      .social-icons {
+        margin-top: 2rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li {
+          margin: 0 0.5rem;
+          a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $default-color;
+            @include flexContent(row);
+            i {
+              color: #fff;
+            }
+            &:hover {
+              background-color: #5eb2b7;
+            }
+          }
+        }
+      }
+      
+    }
+    .bio-info-2 {
+        padding-left: 2rem;
+        padding-right: 1rem;
+       h2 {
+         color: $default-color;
+         
+       }
+       .col-sm {
+         p {
+            color: #0b6464;
+         }
+       }
+      }
+    }
+
+  .ujjwal-detail-info {
+    margin: 2rem 0;
+    h2 {
+      margin-top: 4rem;
+      margin-left: 4rem;
+    }
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+    .row {
+      width: 100vw;
+      margin: 0;
+      padding: 2rem 5rem 5rem 5rem;
+      @include initPadding(var(--sidePadding));
+      h2 {
+        color: $default-color;
+      }
+      h3
+      {
+        color: #2AC6CD;
+      }
+      
+    
+    }
+   } 
+  
+
+    
+  }
 
 
 //* footer styles

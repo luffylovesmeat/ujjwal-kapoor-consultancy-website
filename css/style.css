@@ -784,6 +784,11 @@ h2 {
   margin-left: 4rem;
 }
 
+.btn-makeover {
+  border: 1px solid #369fa4;
+  color: #369fa4;
+}
+
 .contact2 {
   color: #8d97ad;
   font-weight: 300;
@@ -950,6 +955,15 @@ h2 {
   padding: 2rem 0 2rem;
 }
 
+.desclaimer {
+  padding: 2rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #0E494B;
+}
+
 .experiance-page-content .container {
   padding: 0;
   margin: 0;
@@ -1041,6 +1055,115 @@ h2 {
 .come-img {
   margin-top: 2rem;
   width: 359px;
+}
+
+.ujjwal-bio {
+  position: relative;
+}
+
+.ujjwal-bio .bio-container {
+  padding: 2rem;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 .social-icons {
+  margin-top: 2rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 .social-icons li {
+  margin: 0 0.5rem;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 .social-icons li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #369fa4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 .social-icons li a i {
+  color: #fff;
+}
+
+.ujjwal-bio .bio-container .bio-info-1 .social-icons li a:hover {
+  background-color: #5eb2b7;
+}
+
+.ujjwal-bio .bio-container .bio-info-2 {
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.ujjwal-bio .bio-container .bio-info-2 h2 {
+  color: #369fa4;
+}
+
+.ujjwal-bio .bio-container .bio-info-2 .col-sm p {
+  color: #0b6464;
+}
+
+.ujjwal-bio .ujjwal-detail-info {
+  margin: 2rem 0;
+}
+
+.ujjwal-bio .ujjwal-detail-info h2 {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+.ujjwal-bio .ujjwal-detail-info .container {
+  padding: 0;
+  margin: 0;
+}
+
+.ujjwal-bio .ujjwal-detail-info .row {
+  width: 100vw;
+  margin: 0;
+  padding: 2rem 5rem 5rem 5rem;
+  padding-left: var(--sidePadding);
+  padding-right: var(--sidePadding);
+}
+
+.ujjwal-bio .ujjwal-detail-info .row h2 {
+  color: #369fa4;
+}
+
+.ujjwal-bio .ujjwal-detail-info .row h3 {
+  color: #2AC6CD;
 }
 
 #footer .footer-contact {
