@@ -19,24 +19,26 @@ function submitForm(e) {
   let phoneNumber = document.querySelector("#phone-number").value;
   let emailAddress = document.querySelector("#email-id").value;
   let contactMessage = document.querySelector("#contact-message").value;
+  let currentTime = String(new Date());
 
   // Save message
   
-  saveMessage(firstName, lastName, phoneNumber, emailAddress, contactMessage);
+  saveMessage(firstName, lastName, phoneNumber, emailAddress, contactMessage, currentTime);
   window.alert("Form Submit Successfully");
 
   // Clear form
   inputForm.reset();
 }
 
-function saveMessage(fName, lName, phone, email, message){
+function saveMessage(fName, lName, phone, email, message, time){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     FirstName: fName,
     LastName: lName,
-    phone: phone,
-    email: email,
-    message: message
+    Phone: phone,
+    Email: email,
+    Message: message,
+    Date: time
   });
 }
 
