@@ -187,7 +187,6 @@ h2 {
     background-size: cover;
     background-position: center;
 
-    
     z-index: 2;
   }
   .welcome-content {
@@ -595,7 +594,6 @@ h2 {
 
 .contact-box {
   .button-box {
-    
     padding-top: 1.5rem;
   }
   button[type="submit"] {
@@ -605,14 +603,14 @@ h2 {
     }
   }
 }
-.contact-info{
+.contact-info {
   @include initPadding(var(--sidePadding));
   margin: 5rem 0 4rem;
-  h2{
+  h2 {
     text-align: center;
     color: #3e4555;
   }
-  .row{
+  .row {
     padding-top: 2rem;
   }
 }
@@ -627,7 +625,6 @@ h2 {
     h2 {
       margin: 0px 0px 2rem;
     }
-
   }
 }
 
@@ -648,34 +645,33 @@ h2 {
       text-shadow: 1px 1px 5px #000;
       text-align: center;
     }
-    
   }
 }
-.service-box.row{
+.service-box.row {
   margin: 0;
   .card {
     background-color: #fff;
     margin-bottom: 2rem;
     width: 45%;
   }
-  }
-  
-  .detail-services{
-    padding: 3 rem 0 4rem;
-    @include initPadding(var(--sidePadding));
-    .container{
-      padding: 0;
-      margin: 0;
-    }
+}
 
-    .col-sm{
-     padding: 1rem;
-     margin: 0;
-     h3{
-       color: $default-color;
-     }
-   }
- }
+.detail-services {
+  padding: 3 rem 0 4rem;
+  @include initPadding(var(--sidePadding));
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .col-sm {
+    padding: 1rem;
+    margin: 0;
+    h3 {
+      color: $default-color;
+    }
+  }
+}
 .det-serv-txt {
   padding: 2rem 0 2rem;
 }
@@ -686,7 +682,7 @@ h2 {
 }
 
 strong {
-  color: #0E494B;
+  color: #0e494b;
 }
 // .row {
 //   width: 100%;
@@ -714,14 +710,10 @@ strong {
     h2 {
       color: $default-color;
     }
-    h3
-    {
-      color: #2AC6CD;
+    h3 {
+      color: #2ac6cd;
     }
-    
-  
   }
-  
 }
 
 //* Thank You Styles
@@ -754,11 +746,11 @@ strong {
 }
 .come {
   @include flexContent(column);
-  h1{
+  h1 {
     color: $default-color;
   }
 }
-.come-img{
+.come-img {
   margin-top: 2rem;
   width: 359px;
 }
@@ -776,7 +768,7 @@ strong {
       padding-right: 0.5rem;
       width: 50%;
       justify-content: center;
-      
+
       .social-icons {
         margin-top: 2rem;
         list-style: none;
@@ -801,26 +793,24 @@ strong {
           }
         }
       }
-      
     }
     .bio-info-2 {
-        padding-left: 2rem;
-        padding-right: 1rem;
-       h2 {
-         color: $default-color;
-       
+      padding-left: 2rem;
+      padding-right: 1rem;
+      h2 {
+        color: $default-color;
+      }
+      .container {
+        padding: 0;
+        text-align: left;
+      }
+      .col-sm {
+        p {
+          color: #0b6464;
         }
-        .container{
-          padding: 0;
-          text-align: left;
-        }
-       .col-sm {
-         p {
-            color: #0b6464;
-         }
-       }
       }
     }
+  }
 
   .ujjwal-detail-info {
     margin: 2rem 0;
@@ -840,19 +830,12 @@ strong {
       h2 {
         color: $default-color;
       }
-      h3
-      {
-        color: #2AC6CD;
+      h3 {
+        color: #2ac6cd;
       }
-      
-    
     }
-   } 
-  
-
-    
   }
-
+}
 
 //* footer styles
 #footer {
@@ -889,19 +872,19 @@ strong {
     .col-xl-5 {
       padding-right: 50px;
       height: 18rem;
-      a{
+      a {
         color: #ffffff99;
         &:hover {
           color: #ffffff33;
         }
       }
-      .important-links-box{
+      .important-links-box {
         overflow-y: auto;
         height: 8rem;
-        ul{
+        ul {
           margin: 0;
           padding: 0;
-          li{
+          li {
             margin: 0;
             padding: 0;
           }
@@ -1085,13 +1068,13 @@ strong {
       width: 40vw;
     }
   }
-  .more-info{
-    .more-info-content{
+  .more-info {
+    .more-info-content {
       display: flex;
       flex-direction: column-reverse;
-      .image-box{
+      .image-box {
         @include flexContent(row);
-        img{
+        img {
           margin: 0 0 2rem;
         }
       }
@@ -1186,10 +1169,60 @@ strong {
       }
     }
   }
-  .service-box.row{
+  .service-box.row {
     .card {
       width: 80%;
     }
+  }
+  .ujjwal-bio {
+    .bio-container {
+      @include initPadding(var(--sidePadding));
+      margin: 5rem 0 4rem;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      .bio-info-1 {
+        width: 100%;
+        
+        .social-icons {
+          justify-content: start;
+        }
+        
+      }
+      .bio-info-2 {
+          padding-left: 1rem;
+        }
+      }
+  
+    .ujjwal-detail-info {
+      margin: 2rem 0;
+      @include initPadding(var(--sidePadding));
+      h2 {
+        margin-top: 4rem;
+        // margin-left: 4rem;
+      }
+      .container {
+        padding: 0;
+        margin: 0;
+      }
+      .row {
+        margin: 2rem 0 4rem;
+        // padding: 2rem 5rem 5rem 5rem;
+        // @include initPadding(var(--sidePadding));
+        h2 {
+          color: $default-color;
+        }
+        h3
+        {
+          color: #2AC6CD;
+        }
+        
+      
+      }
+     } 
+    
+  
+      
     }
 }
 
@@ -1235,10 +1268,10 @@ strong {
       bottom: 0;
     }
   }
-  .home-accounting{
-    .accounting-content{
-      .image-box{
-        img{
+  .home-accounting {
+    .accounting-content {
+      .image-box {
+        img {
           max-width: 80vw;
         }
       }
@@ -1267,15 +1300,15 @@ strong {
           max-width: 80vw;
         }
       }
-      .about-us-content.col-reverse{
+      .about-us-content.col-reverse {
         @include flexContent(column-reverse);
       }
     }
   }
-  .more-info{
-    .more-info-content{
-      .image-box{
-        img{
+  .more-info {
+    .more-info-content {
+      .image-box {
+        img {
           margin: 0 0 2rem;
           max-width: 80vw;
         }
@@ -1283,7 +1316,7 @@ strong {
     }
   }
 
-  .come-img{
+  .come-img {
     width: 80vw;
   }
 }
