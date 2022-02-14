@@ -976,7 +976,7 @@ h2 {
 }
 
 strong {
-  color: #0E494B;
+  color: #0e494b;
 }
 
 .experiance-page-content .container {
@@ -997,7 +997,7 @@ strong {
 }
 
 .experiance-page-content .row h3 {
-  color: #2AC6CD;
+  color: #2ac6cd;
 }
 
 .main-thanku {
@@ -1182,7 +1182,7 @@ strong {
 }
 
 .ujjwal-bio .ujjwal-detail-info .row h3 {
-  color: #2AC6CD;
+  color: #2ac6cd;
 }
 
 #footer .footer-contact {
@@ -1643,6 +1643,51 @@ strong {
   }
   .service-box.row .card {
     width: 80%;
+  }
+  .ujjwal-bio .bio-container {
+    padding-left: var(--sidePadding);
+    padding-right: var(--sidePadding);
+    margin: 5rem 0 4rem;
+    text-align: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ujjwal-bio .bio-container .bio-info-1 {
+    width: 100%;
+  }
+  .ujjwal-bio .bio-container .bio-info-1 .social-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .ujjwal-bio .bio-container .bio-info-2 {
+    padding-left: 1rem;
+  }
+  .ujjwal-bio .ujjwal-detail-info {
+    margin: 2rem 0;
+    padding-left: var(--sidePadding);
+    padding-right: var(--sidePadding);
+  }
+  .ujjwal-bio .ujjwal-detail-info h2 {
+    margin-top: 4rem;
+  }
+  .ujjwal-bio .ujjwal-detail-info .container {
+    padding: 0;
+    margin: 0;
+  }
+  .ujjwal-bio .ujjwal-detail-info .row {
+    margin: 2rem 0 4rem;
+  }
+  .ujjwal-bio .ujjwal-detail-info .row h2 {
+    color: #369fa4;
+  }
+  .ujjwal-bio .ujjwal-detail-info .row h3 {
+    color: #2AC6CD;
   }
 }
 
